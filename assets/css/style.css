@@ -1,24 +1,7 @@
-/*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
-
-/**
- * copyright 2022 codewithsadee
- */
-
-
-
-
-
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
 
 :root {
 
-  /**
-   * colors
-   */
+
 
   --cadet-blue-crayola: hsl(240, 10%, 70%);
   --gold-web-golden: hsl(50, 100%, 54%);
@@ -37,10 +20,6 @@
   --black: hsl(0, 0%, 0%);
   --white: hsl(0, 0%, 100%);
 
-  /**
-   * typography
-   */
-
   --ff-open-sans: 'Open Sans', sans-serif;
   --ff-barlow: 'Barlow', sans-serif;
   --ff-poppins: 'Poppins', sans-serif;
@@ -55,30 +34,19 @@
   --fw-600: 600;
   --fw-700: 700;
 
-  /**
-   * border radius
-   */
 
   --radius-5: 5px;
   --radius-10: 10px;
   --radius-15: 15px;
   --radius-20: 20px;
 
-  /**
-   * spacing
-   */
 
   --section-padding: 60px;
 
-  /**
-   * shadow
-   */
+
 
   --shadow: 0 -5px 10px var(--manatee);
 
-  /**
-   * transition
-   */
 
   --transition-1: 0.05s ease;
   --transition-2: 0.25s ease;
@@ -90,9 +58,6 @@
 
 
 
-/*-----------------------------------*\
-  #RESET
-\*-----------------------------------*/
 
 *,
 *::before,
@@ -168,9 +133,6 @@ body {
 
 
 
-/*-----------------------------------*\
-  #REUSED STYLE
-\*-----------------------------------*/
 
 .container { padding-inline: 20px; }
 
@@ -229,7 +191,7 @@ body {
 
 .header {
   position: fixed;
-  padding-block: 15px;
+  padding-block: 10px;
   width: 100%;
   background-color: var(--space-cadet);
   height: 65px;
