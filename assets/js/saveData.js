@@ -1,12 +1,15 @@
+emailjs.init("0ebb6FTO9wLumFGDF");
+
 const form = document.forms["google-sheet"];
 
 form.addEventListener("submit", function (e) {
   e.preventDefault();
-  const name = form.name.value;
-  const email = form.email.value;
-  const message = form.message.value;
 
-  const mailtoLink = `mailto:vishalkumarpatelofficial01@gmail.com?subject=Message from ${encodeURIComponent(name)}&body=Name: ${encodeURIComponent(name)}%0AEmail: ${encodeURIComponent(email)}%0AMessage: ${encodeURIComponent(message)}`;
-
-  window.location.href = mailtoLink;
+  emailjs.sendForm("service_xsoz109", "template_hif79mg", form)
+    .then(function () {
+      alert("Thanks! Your message has been sent.");
+      form.reset();
+    }, function () {
+      alert("Failed to send message. Please try again.");
+    });
 });
